@@ -1,0 +1,139 @@
+body {
+  background-color: #000;
+  color: #b3c3e1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+header {
+  background-color: #000000;
+  padding: 20px 0;
+}
+#logo {
+  background-image: url('/static/images/Netflix_Logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 600px; /* Ajusta este valor según el tamaño de tu logo */
+  height: 110px; /* Ajusta este valor según el tamaño de tu logo */
+}
+#linea {
+  background-color: #e50914;
+  height: 5px;
+}
+#titulo {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+}
+
+#subtitulo {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+}
+main {
+  background-color: #1a0c0d;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#peliculas-recomendadas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pelicula {
+  flex-basis: 45%;
+  margin-bottom: 20px;
+}
+
+.pelicula h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#formulario {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#formulario .circle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#formulario select {
+  width: 30%;
+  padding: 10px;
+  border-radius: 50px; /* Esto hace que los bordes sean redondos */
+  border: none; /* Esto elimina el borde predeterminado */
+  background-color: #141414; /* Esto establece el color de fondo del select */
+  color: #fff; /* Esto establece el color del texto del select */
+}
+#formulario button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e50914;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#formulario button:hover {
+  background-color: #b20710;
+}
+.reporte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#reporte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reporte:hover {
+  background-color: #f40612;
+}
+#reporte_resultados {
+  background-color: #141414; /* Color de fondo oscuro de Netflix */
+  border: 1px solid #303030; /* Borde oscuro */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px 0; /* Espaciado externo */
+  font-size: 1.2em; /* Tamaño de la fuente */
+  color: #e50914; /* Color rojo de Netflix */
+}
+/*pondremos el footer al final de la pagina*/
+footer {
+  background-color: #141414;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 550px;
+}
